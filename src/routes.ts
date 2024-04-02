@@ -7,6 +7,9 @@ routeMap.set('/api/hello', {
 	POST: apiHello.POST,
 });
 
+// Add more route mappings as needed
+// routeMap.set('/api/otherRoute', { ... });
+
 export default routeMap;
 
 type RouteHandler = (request: Request, env: Env, ctx: ExecutionContext) => Promise<Response>;
